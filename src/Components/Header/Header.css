@@ -1,0 +1,31 @@
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 5vw;
+    /* padding-left:2%; */
+    align-items: center;
+    width: 95%;
+    margin-left: 2%;
+    border-bottom: 2px solid black;
+    margin-top: 1%;
+}
+.logo{
+    width: 40%;
+}
+img{
+    width: 30%;
+}
+.content-area{
+    width: 60%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+li{
+    list-style: none;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color:  rgb(39, 39, 39);
+}

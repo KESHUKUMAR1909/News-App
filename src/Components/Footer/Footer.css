@@ -1,0 +1,30 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    /* padding-left:  2%; */
+    height: 5vw;
+    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+    border-top: 2px solid black;
+}
+.foot-btns{
+    display: flex;
+    width: 50%;
+    gap: 3%;
+    cursor: pointer}
+button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color:rgb(201, 201, 234);
+    cursor: pointer;
+}
+.foot-img{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+img{
+    width: 40%;
+}
