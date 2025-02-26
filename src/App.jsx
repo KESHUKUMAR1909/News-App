@@ -9,13 +9,13 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
-       <Header />
-       {/* <Home /> */}
-   
-       <NewsPage category={"technology"}  country={"us"} size={8} />
-       <Footer />
-    </BrowserRouter>
+      <BrowserRouter>
+        <Header />
+        {/* <Home /> */}
+        <Home />
+        {/* <NewsPage category={"technology"}  country={"us"} size={8} /> */}
+        <Footer />
+      </BrowserRouter>
 
     </>
   )
