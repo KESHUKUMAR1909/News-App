@@ -1,0 +1,19 @@
+.news-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 20%;
+    padding: 10px;
+    height: 40vh;
+    overflow-y:hidden;
+    border: 2px solid black;
+}
+.image{
+    width: 100%;
+}
+.image>img{
+    width: 100%;
+}
+.details{
+    width: 100%;
+}

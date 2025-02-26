@@ -2,8 +2,8 @@ import Header from './Components/Header/Header'
 import { BrowserRouter } from 'react-router-dom'
 import Footer from './Components/Footer/Footer'
 import './App.css'
-import Spinner from './Components/Spinner/Spinner'
 import Home from "./home/Home"
+import NewsPage from './News/NewsPage'
 
 function App() {
 
@@ -11,7 +11,9 @@ function App() {
     <>
     <BrowserRouter>
        <Header />
-       <Home />
+       {/* <Home /> */}
+   
+       <NewsPage category={"technology"}  country={"us"} size={8} />
        <Footer />
     </BrowserRouter>
 
@@ -19,4 +21,4 @@ function App() {
   )
 }
 
-export default App
+export default App        

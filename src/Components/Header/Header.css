@@ -4,8 +4,8 @@
     height: 5vw;
     /* padding-left:2%; */
     align-items: center;
-    width: 95%;
-    margin-left: 2%;
+    width: 96%;
+    margin-left: 3%;
     border-bottom: 2px solid black;
     margin-top: 1%;
 }
@@ -13,13 +13,13 @@
     width: 40%;
 }
 img{
-    width: 30%;
+    /* width: 26%; */
 }
 .content-area{
     width: 60%;
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    padding: 40px;
+    justify-content: space-between;
 }
 li{
     list-style: none;
