@@ -1,32 +1,41 @@
+:root {
+  --hue: 223; /* Base hue for the color scheme */
+  --bg: hsl(var(--hue), 90%, 10%); /* Dark background */
+  --fg: hsl(var(--hue), 90%, 90%); /* Light foreground text */
+  --primary: hsl(var(--hue), 90%, 50%); /* Bright blue primary color */
+  --trans-dur: 0.3s; /* Transition duration for smooth effects */
+  --dur: 3s; /* Duration for animations */
+}
+
 #fixedlol {
   height: 70vh;
   margin: auto;
   position: fixed;
-  margin-left: 5vw;
+  margin-left: 6vw;
   width: 50vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 4vw;
-}
-#fixedlol h1 {
-  font-size: 3vw;
-  font-family: Arial, sans-serif;
-  text-transform: none;
-  font-weight: 600;
-  letter-spacing: 0;
-}
-#fixedlol h2 {
-  font-size: 2vw;
-  font-family: Arial, sans-serif;
-  text-transform: none;
-  font-weight: 600;
-  letter-spacing: 0;
-}
-#fixedlol p {
-  font: 500 1vw Arial, sans-serif;
-  letter-spacing: 0;
-  margin: 2vw 0;
+  h1 {
+    font-size: 3vw;
+    font-family: var(font-family2);
+    text-transform: none;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+  h2 {
+    font-size: 2vw;
+    font-family: var(font-family2);
+    text-transform: none;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+  p {
+    font: 500 1vw var(font-family2);
+    letter-spacing: 0;
+    margin: 02vw 0;
+  }
 }
 
 .p2 {
@@ -51,7 +60,7 @@
 .pl__ring,
 .pl__orbit,
 .pl__electron {
-  animation: particleTop 3s linear infinite;
+  animation: particleTop var(--dur) linear infinite;
 }
 .newhome {
   width: 2.6em !important;
@@ -63,20 +72,20 @@
   transform-style: preserve-3d;
 }
 .pl__nucleus-particle {
-  background-color: hsl(223, 90%, 50%);
+  background-color: var(--primary);
   background-image: radial-gradient(
     37.5% 37.5% at 37.5% 37.5%,
-    hsla(223, 10%, 90%, 0.25) 48%,
-    hsla(223, 10%, 90%, 0) 50%
+    hsla(var(--hue), 10%, 90%, 0.25) 48%,
+    hsla(var(--hue), 10%, 90%, 0) 50%
   );
   border-radius: 50%;
-  box-shadow: -0.125em -0.125em 0 hsla(223, 10%, 10%, 0.25) inset;
+  box-shadow: -0.125em -0.125em 0 hsla(var(--hue), 10%, 10%, 0.25) inset;
   top: calc(50% - 0.5em);
-  left: calc(50% - 1em);
-  transition: background-color 0.3s;
+  left: calc(50% - 0.5em);
+  transition: background-color var(--trans-dur);
 }
 .pl__nucleus-particle:nth-child(2n) {
-  background-color: hsl(223, 90%, 70%);
+  background-color: hsl(var(--hue), 90%, 70%);
 }
 .pl__nucleus-particle:nth-child(n + 4):nth-child(-n + 9) {
   animation-name: particleMiddle;
@@ -84,37 +93,6 @@
 .pl__nucleus-particle:nth-child(n + 10):nth-child(-n + 12) {
   animation-name: particleBottom;
 }
-.pl__nucleus-particle:nth-child(2) {
-  animation-delay: calc(3s * -0.33);
-}
-.pl__nucleus-particle:nth-child(3) {
-  animation-delay: calc(3s * -0.67);
-}
-.pl__nucleus-particle:nth-child(5) {
-  animation-delay: calc(3s * -0.17);
-}
-.pl__nucleus-particle:nth-child(6) {
-  animation-delay: calc(3s * -0.33);
-}
-.pl__nucleus-particle:nth-child(7) {
-  animation-delay: calc(3s * -0.5);
-}
-.pl__nucleus-particle:nth-child(8) {
-  animation-delay: calc(3s * -0.67);
-}
-.pl__nucleus-particle:nth-child(9) {
-  animation-delay: calc(3s * -0.83);
-}
-.pl__nucleus-particle:nth-child(11) {
-  animation-delay: calc(3s * -0.33);
-}
-.pl__nucleus-particle:nth-child(12) {
-  animation-delay: calc(3s * -0.67);
-}
-.pl__nucleus-particle:last-child {
-  animation: none;
-}
-
 .pl__rings {
   display: block;
   width: 100%;
@@ -124,55 +102,11 @@
   animation-name: ring;
   transform-origin: 64px 64px;
 }
-.pl__ring:nth-child(n + 5):nth-child(-n + 7) {
-  animation-delay: calc(3s * -0.25);
-}
 .pl__orbit,
 .pl__electron {
   animation-name: orbit;
-  transition: stroke 0.3s;
+  transition: stroke var(--trans-dur);
 }
-.pl__orbit:first-child {
-  stroke: hsla(223, 90%, 50%, 0);
-}
-.pl__orbit:nth-child(2) {
-  stroke: hsla(223, 90%, 50%, 0.5);
-}
-.pl__orbit:nth-child(3) {
-  stroke: hsla(223, 90%, 50%, 0.7);
-}
-.pl__ring:first-child .pl__orbit:first-child {
-  stroke: hsla(223, 90%, 50%, 0.3);
-}
-.pl__ring:nth-child(2) .pl__orbit {
-  animation-delay: calc(3s * -0.125);
-}
-.pl__ring:nth-child(3) .pl__orbit {
-  animation-delay: calc(3s * -0.25);
-}
-.pl__ring:nth-child(4) .pl__orbit {
-  animation-delay: calc(3s * -0.375);
-}
-.pl__ring:nth-child(5) .pl__orbit:first-child {
-  stroke: hsla(223, 90%, 50%, 0.3);
-}
-.pl__ring:nth-child(6) .pl__orbit {
-  animation-delay: calc(3s * -0.25);
-}
-.pl__ring:nth-child(7) .pl__electron:nth-child(2) {
-  animation-delay: calc(3s * -0.25);
-}
-.pl__ring:nth-child(8) .pl__electron:nth-child(2) {
-  animation-delay: calc(3s * -0.125);
-}
-.pl__ring:nth-child(8) .pl__electron:nth-child(3) {
-  animation-delay: calc(3s * -0.25);
-}
-.pl__ring:nth-child(8) .pl__electron:nth-child(4) {
-  animation-delay: calc(3s * -0.375);
-}
-
-/* Animations */
 @keyframes orbit {
   from {
     stroke-dashoffset: 0;
