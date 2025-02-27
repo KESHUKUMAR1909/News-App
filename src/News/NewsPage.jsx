@@ -50,7 +50,7 @@ function NewsPage(props) {
                 <Notfoundpage />
             ) : (
                 <>
-                    <h1>Latest Tech News</h1>
+                    <h1>Latest {props.category.charAt(0).toUpperCase() + props.category.slice(1)} News</h1>
                     <ul>
                         {newsDetails.map((news, index) => (
                             <NewsCard
