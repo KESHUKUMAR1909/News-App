@@ -1,72 +1,65 @@
-News App
+
+
+# News App
 
 A React-based News Application that fetches and displays the latest news from various categories using the News API.
 
-🚀 Features
+## 🚀 Features
 
-Fetches top headlines based on category and country.
+- Fetches top headlines based on category and country.
+- Pagination support to navigate through news pages.
+- Responsive design for a smooth user experience.
+- Dynamic category-based news filtering.
+- Displays images, titles, and descriptions of news articles.
 
-Pagination support to navigate through news pages.
+## 🛠️ Technologies Used
 
-Dynamic category-based news filtering.
+- React.js
+- React Router
+- Axios (for API requests)
+- CSS (for styling)
+- News API
 
-Displays images, titles, and descriptions of news articles.
+## 📦 Installation
 
-🛠️ Technologies Used
+### Clone the repository:
+```sh
+git clone https://github.com/KESHUKUMAR1909/News_App.git
+```
 
-React.js
-
-React Router
-
-Axios (for API requests)
-
-CSS (for styling)
-
-News API
-
-📦 Installation
-
-Clone the repository:
-
-git clone https://github.com/yourusername/News_App.git
-
-Navigate to the project directory:
-
+### Navigate to the project directory:
+```sh
 cd News_App
+```
 
-Install dependencies:
-
+### Install dependencies:
+```sh
 npm install
+```
 
-Start the development server:
-
+### Start the development server:
+```sh
 npm start
-
-⚙️ Configuration
-
-Create a .env file in the root directory and add your News API Key:
-
-REACT_APP_NEWS_API_KEY=your_api_key_here
-
-🔥 Usage
-
-Select a category to view relevant news.
-
-Click Next and Previous buttons to navigate between pages.
-
-Click on a news card to read the full article.
-
-📸 Screenshots
+```
 
 
+## 🔥 Usage
 
-🤝 Contributing
+- Select a category to view relevant news.
+- Click **Next** and **Previous** buttons to navigate between pages.
+- Click on a news card to read the full article.
 
-Feel free to fork this repository and contribute by submitting a pull request.
 
-📜 License
+## 🤝 Contributing
 
-This project is licensed under the MIT License.
+Feel free to **fork** this repository and contribute by submitting a **pull request**.
 
-⭐ Star this repository if you found it useful!
+## 📜 License
 
+This project is licensed under the **MIT License**.
+
+## ⭐ Star this repository if you found it useful!
+
+## 🔗 Connect with Me
+
+- **GitHub:** [KESHUKUMAR1909](https://github.com/KESHUKUMAR1909)

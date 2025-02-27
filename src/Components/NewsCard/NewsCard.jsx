@@ -3,7 +3,7 @@ function NewsCard({url , urlToImage , title , description}){
     return(
         <div className="news-card">   
             <div className="image">
-                <img src={urlToImage}/>
+                <img src={urlToImage} alt="Some Image Is here"/>
             </div>
             <div className="details">
                 <p className="title">{title}</p>
