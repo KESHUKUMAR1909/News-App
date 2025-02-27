@@ -6,7 +6,7 @@ function NewsCard({url , urlToImage , title , description}){
                 <img src={urlToImage}/>
             </div>
             <div className="details">
-                <p>{title}</p>
+                <p className="title">{title}</p>
                 <p>{description}</p>
             </div>
             <button><a href={url} target="_blank">Explore More</a></button>
